@@ -1,0 +1,253 @@
+* {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.login,
+.reg {
+  padding: 40px;
+}
+
+.login .logo,
+.reg .logo {
+  margin-bottom: 50px;
+}
+
+.login .loginForm input:focus,
+.reg .regForm input:focus {
+  border: 1px solid #fb5572;
+  box-shadow: none;
+}
+
+.login .loginForm button,
+.reg .regForm button {
+  border: 1px solid #fb5572;
+  color: #fb5572;
+  transition: all 0.2s ease-in-out;
+}
+
+.login .loginForm button:hover,
+.reg .regForm button:hover {
+  background-color: #fb5572;
+  color: white;
+}
+
+.image {
+  background: url('../public/loginIMG.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#header {
+  background-color: #dfbfbf;
+}
+
+.navbar .searchForm {
+  position: relative;
+
+}
+
+.navbar .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .user a {
+  color: #fb5572;
+}
+
+.navbar .user .search {
+  color: white;
+  font-size: 20px;
+  background: #fb5572;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.navbar .searchForm input {
+  width: 37.5rem;
+  padding: 5px 0 5px 40px;
+  border: none;
+  border-radius: 3px;
+}
+
+.navbar .searchForm input:focus {
+  outline: 1px dashed #fb5572;
+}
+
+.navbar .searchForm button {
+  position: absolute;
+  left: 0;
+  height: -webkit-fill-available;
+  width: 40px;
+  border: none;
+  background: transparent;
+  color: #fb5572b8;
+}
+
+#body .row .PageList {
+  padding: 10px 30px 10px 30px;
+  background: #f3f3f38f;
+}
+
+#body .logOut button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+#body .fa-solid,
+.fa-regular {
+  color: #fb5572;
+}
+
+.PageList .dashboard span:hover,
+.products span:hover,
+.favourites span:hover,
+.orderList span:hover,
+.logOut span:hover {
+  color: #fb5572;
+}
+
+.PageList .category {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.PageList .category div button {
+  margin: 5px 4px;
+  border: 1px solid #fb5572;
+  border-radius: 9px;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.PageList .category div button:hover {
+  background-color: #fb5572;
+  color: white;
+  font-weight: 400;
+}
+
+.MainPage {
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.MainPage .product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow-y: auto;
+  padding: 15px 0;
+  justify-content: center;
+}
+
+.MainPage .emptyImg {
+  background: url("../public/emptyImg0-removebg.png");
+  background-position: center;
+  height: 500px;
+}
+
+.product img {
+  position: relative;
+}
+
+.product .addFavBtn {
+  border: none;
+  border-top-left-radius: 5px;
+  width: 40px;
+  height: 45px;
+  background: #00000087;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  transition: all .2s ease-in-out;
+}
+
+.product .addFavBtn:hover {
+  background-color: #dddddd18;
+  color: #fb5572;
+}
+
+.Favourites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+}
+
+.details .gifSetting {
+  height: 36vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Dashboard .deleteBTN,
+.Favourites .removeBTN {
+  border: none;
+  background: none;
+  font-size: x-large;
+}
+
+.Favourites .removeBTN {
+  padding-left: 100px;
+}
+
+.pageHeading {
+  font-family: 'FontAwesome';
+  transition: all 0.3s ease-in-out;
+}
+
+.pageHeading:hover {
+  color: #fb5572;
+}
+
+.select .form-select:focus {
+  box-shadow: 0 0 0 0.25rem #fb5572;
+  border: none;
+}
+
+.StyleBTN {
+  padding: 0 10px;
+  font-size: 20px;
+  border: none;
+  background-color: #fb5572;
+  color: white;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.StyleBTN:hover {
+  background-color: white;
+  color: #fb5572;
+  outline: 1px solid;
+}
+
+@media only screen and (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .searchForm input {
+    width: 20rem;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .details img {
+    width: 500px;
+  }
+}
